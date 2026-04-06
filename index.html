@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function signin(){
+            var name = document.getElementById("name").value;
+            var pass = document.getElementById("pass").value;
+        }
+    </script>
 </head>
-<body>
-    <h1>This is my first file for Git Demo</h1>
-    <h2>This is my Example</h2>
+<body >
+    <center>
+    <h1>Login page</h1>
+    <hr>
+    <form>
+        <table>
+            <tr>
+        <td><label>Name</label></td>
+        <td><input id="name" type="text" ></td></tr>
+        <tr><td><label>Password</label></td>
+        <td><input id="pass" type="password"></td></tr>
+        </table>
+        <br>
+        <button id="signin" onclick="signin()"> Sign In</button>
+    </form>
+    </center>
 </body>
 </html>
