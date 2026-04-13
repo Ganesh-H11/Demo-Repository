@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function signin(){
-            var name = document.getElementById("name").value;
-            var pass = document.getElementById("pass").value;
-        }
-    </script>
 </head>
-<body >
-    <center>
-    <h1>Login page</h1>
-    <h4>Registration Form</h4>
-    <hr>
-    <form>
-        <table>
-            <tr>
-        <td><label>Name</label></td>
-        <td><input id="name" type="text" ></td></tr>
-        <tr><td><label>Password</label></td>
-        <td><input id="pass" type="password"></td></tr>
-        </table>
-        <br>
-        <button id="signin" onclick="signin()"> Sign In</button>
-    </form>
-    </center>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h1 class="title">Welcome Back</h1>
+            <p class="subtitle">Please sign in to your account</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="name">Username</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="pass" required>
+                </div>
+                <button type="submit" class="signin-btn">Sign In</button>
+            </form>
+            <div class="links">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <a href="#" class="signup-link">Don't have an account? Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
